@@ -1,0 +1,9 @@
+uses Robot;
+
+begin
+  Task('if1');
+  Right;
+  if WallFromRight then Down;
+  if not WallFromRight then Right;
+  Up; Paint;
+end.
