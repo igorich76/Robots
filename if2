@@ -1,34 +1,10 @@
-uses Robot;
 begin
   Task('if2');
- if not WallFromUp then Right;
- if not WallFromUp then Up;
- Up;Right;
- Paint;
- while FreeFromDown do 
- begin
-   Down;
-    Paint;     
- end;
- if not WallFromUp then Left;
- Paint;
-   
- while FreeFromLeft do 
- begin
-   Left;
-    Paint;     
- end;
- // не закончил программу!!!!
- while FreeFromUp do 
- begin
-   up;
-    Paint;     
- end;
- while FreeFromRight do 
- begin
-   Right;
-    Paint;     
- end;
-end.
-/////////
+  Paint;
+  Right;  
+if WallFromRight then Paint;
+{Left;
+Up;
+if WallFromUp then Paint;
+Down;}
 end.
