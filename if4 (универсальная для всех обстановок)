@@ -1,0 +1,9 @@
+uses Robot;
+
+begin
+  Task('if4');
+  if WallFromDown then Up;Paint;
+  if WallFromUp then Down;Paint;
+  if WallFromLeft then Right;Paint;
+  if WallFromRight then Left;Paint;
+end.
