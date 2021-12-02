@@ -1,0 +1,19 @@
+uses Robot;
+begin 
+  Task('count2');
+  var s:=0;
+  var s2:=0;
+  while FreeFromRight do
+  begin
+    Right;
+    s:=s+1;
+  end;
+  while FreeFromDown do
+  begin
+    Down;
+    s2:=s2+1;
+  end;
+  Paint;
+  for var s3:=0 to s2-1 do Up;
+  for var s4:=0 to s-1 do Left;
+end. 
