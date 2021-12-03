@@ -1,0 +1,10 @@
+uses Robot;
+
+begin
+  Task('cif3');
+    while FreeFromRight do
+    begin
+      Right;
+        if WallFromUp and WallFromDown then Paint;
+    end;
+end.
