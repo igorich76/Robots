@@ -1,0 +1,5 @@
+begin
+  Task('w1');  
+  while FreeFromRight do
+    Right;
+end.
