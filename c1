@@ -1,0 +1,7 @@
+uses Robot;
+
+begin
+  Task('c1');
+  while FreeFromRight do
+    Right;  
+end.
