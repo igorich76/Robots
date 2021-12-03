@@ -5,6 +5,6 @@ begin
     while FreeFromRight do
     begin
       Right;
-        if WallFromUp then Paint;
+        if WallFromUp then Paint; // чуток заменил код
     end;
 end.
