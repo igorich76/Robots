@@ -1,0 +1,11 @@
+uses Robot;
+
+begin
+  Task('w2');  
+  while FreeFromRight do
+    begin
+    Paint;
+    Right;
+    Paint;
+    end;
+end.
