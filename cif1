@@ -2,7 +2,9 @@ uses Robot;
 
 begin
   Task('cif1');
-    while FreeFromRight do Right;
-    if FreeFromRight and WallFromUp then Paint;
-  
+    while FreeFromRight do
+    begin
+      Right;
+        if WallFromUp then Paint;
+    end;
 end.
