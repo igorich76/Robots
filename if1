@@ -1,9 +1,26 @@
 uses Robot;
-
+// 1 вариант
 begin
   Task('if1');
   Right;
   if WallFromRight then Down;
   if not WallFromRight then Right;
   Up; Paint;
+end.
+// 2 вариант
+Right; 
+  if WallFromUp then 
+  begin
+    Down;
+    Right;
+    Up;
+    Paint;
+    end;
+ if WallFromDown then 
+  begin
+    Up;
+    Right;
+    Down;
+    Paint;
+    end; 
 end.
