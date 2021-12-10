@@ -1,0 +1,32 @@
+uses Robot;
+begin
+  Task('if3');
+  
+  if FreeFromUp and FreeFromLeft then 
+  begin
+    Up;
+    Left;
+    Paint;
+  end;
+  
+   if FreeFromDown and FreeFromLeft then 
+  begin
+    Down;
+    Left;
+    Paint;
+  
+  if FreeFromDown and FreeFromRight then 
+  begin
+    Down;
+    Right;
+    Paint;   
+  end;
+  
+  if FreeFromUp and FreeFromRight then 
+  begin
+    Up;
+    Right;
+    Paint;   
+  end;  
+ 
+  end;
