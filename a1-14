@@ -1,0 +1,23 @@
+uses Robot;
+begin
+Task('a1');
+Right; Right; Right; Right;
+Up; Left; Paint; Left; Paint;
+Left; Paint; Left; Paint; Left;
+Task('a2');
+Down; Paint; Down; Paint; Right;
+Paint; Right; Paint; Up;
+Paint; Up; Paint; Left; Paint;
+Left; Paint;
+Task('a3');
+Paint; Down; Paint; Right; Paint;
+Up; Paint; Right; Paint; Down;
+Paint; Right; Paint; Up; Paint;
+Task('a4');
+Up; Up; Right; Down; Down;
+Paint; Up; Up; Right; Down;
+Down; Paint; Up; Up; Right;
+Down; Down; Paint; Up; Up;
+Left; Left; Left; Down;
+Down;
+end.
