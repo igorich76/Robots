@@ -1,0 +1,19 @@
+uses Robot;
+begin
+  Task('c7');
+   while WallFromLeft do  begin    Paint;   Down;Paint;   end;
+   while FreeFromLeft do   begin     Left;Paint;   end;
+   while FreeFromUp do     begin     Up;Paint;   Left;Paint;   end;
+   while WallFromLeft do  begin   Paint;   Down;Paint;   end;
+   while FreeFromLeft do   begin     Left;Paint;   end;
+   while FreeFromUp do     begin     Up;Paint;   Left;Paint;   end;
+   while WallFromLeft do  begin   Paint;   Down;Paint;   end;
+   while FreeFromLeft do   begin     Left;Paint;   end;
+   while FreeFromUp do     begin     Up;Paint;   Left;Paint;   end;
+   while WallFromLeft do  begin   Paint;   Down;Paint;   end;
+   while FreeFromLeft do   begin     Left;Paint;   end;
+   while FreeFromUp do     begin     Up;Paint;   Left;Paint;   end;
+   while WallFromLeft do  begin   Paint;   Down;Paint;   end;
+   while FreeFromLeft do   begin     Left;Paint;   end;
+   while FreeFromUp do     begin     Up;Paint;   Left;   end;
+end.
