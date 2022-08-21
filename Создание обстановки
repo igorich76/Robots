@@ -1,0 +1,8 @@
+uses Robot;
+
+begin
+  var x,y: integer;
+  Field(9,9); //самое лучшее поле
+  Up;Up;Paint;
+  
+end.
