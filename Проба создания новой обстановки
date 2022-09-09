@@ -1,0 +1,24 @@
+unit RobotTraining;
+interface
+uses RobotTaskMaker; //подключение модуля конструктора
+implementation
+
+procedure _1Robot; //процедура создания задания 1
+var n: integer;
+begin
+  TaskText('Задание Rob1. Закрасить клетки по диагонали квадрата (отмечены точками)'); 
+  n := Random(7)+3;
+  Field(n,n);
+  RobotBeginEnd(1,n,n,1);
+  for var i:=1 to n do Tag(i,n+1-i);
+end;
+begin  
+{Процедура регистрации группы}
+RegisterGroup ('rob','Задания для Робота', 'RobotTasks', 3);
+RegisterTask('rob1', _1Robot);         {Процедура регистрации задания 1}
+
+end.
+
+// по сайту: http://zanko.lusino.gancevichi.edu.by/ru/main.aspx?guid=13561
+// не получилось изменить файл loadpabc.dat
+//х.з. что не так
