@@ -1,0 +1,10 @@
+##
+uses Robot;
+
+Task('c6');
+loop 8 do 
+begin
+  Left; Paint;
+  Left
+end;
+loop 16 do Right
