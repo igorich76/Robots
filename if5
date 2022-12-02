@@ -1,0 +1,31 @@
+// первый вариант обычный
+##
+uses Robot;
+
+Task('if5');
+if WallFromLeft then 
+begin
+  Up;Paint;Down;Down;
+  Paint;Up;
+end;
+
+if WallFromRight then 
+begin
+  Up; Paint;Down;Down;
+  Paint; Up;
+end;
+
+if WallFromDown then
+begin
+  Right;Paint;Left;Left;
+  Paint;Right;
+end;
+
+if WallFromUp then
+begin
+  Right;Paint;Left;Left;
+  Paint;Right;
+end;
+
+/////////////////////////////////////
+//второй ариант с процедурами
