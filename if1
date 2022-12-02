@@ -1,13 +1,19 @@
+///////1 вариант
+##
 uses Robot;
-// 1 вариант (на половину рабочий, на другую нет!
+Task('if1'); 
+
+Right;
+if WallFromRight and WallFromUp then 
 begin
-  Task('if1');
-  Right;
-  if WallFromRight then Down;
-  if not WallFromRight then Right;
-  Up; Paint;
-end.
-// 2 вариант
+  Down;Right; Up; Paint;
+end;
+
+if WallFromRight and WallFromDown then 
+begin
+  Up; Right; Down; Paint;
+end; 
+///////////2 вариант
 Right; 
   if WallFromUp then 
   begin
