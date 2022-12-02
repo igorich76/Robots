@@ -29,3 +29,27 @@ end;
 
 /////////////////////////////////////
 //второй ариант с процедурами
+##
+uses Robot;
+
+procedure horizont;
+begin
+  Right;Paint;Left;Left;
+  Paint;Right;
+end;
+
+procedure vertical;
+begin
+  Up;Paint;Down;Down;
+  Paint;Up;
+end;
+
+Task('if5');
+
+if WallFromLeft then vertical;
+
+if WallFromRight then vertical;
+
+if WallFromDown then horizont;
+
+if WallFromUp then horizont;
