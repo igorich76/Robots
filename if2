@@ -1,10 +1,12 @@
-begin
-  Task('if2');
-  Paint;
-  Right;  
-if WallFromRight then Paint;
-{Left;
+##
+uses Robot;
+Task('if2'); 
+Down;
+if WallFromDown then begin Paint;Up; end else Up;
+Left;
+if WallFromLeft then begin Paint;Right; end else Right;
 Up;
-if WallFromUp then Paint;
-Down;}
-end.
+if WallFromUp then begin Paint; Down; end else Down;
+Right;
+if WallFromRight then begin Paint; Left; end else Left;
+Paint;
