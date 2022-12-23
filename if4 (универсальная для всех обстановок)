@@ -2,10 +2,10 @@
 uses Robot;
 begin
   Task('if4');
-  if WallFromDown then Up;Paint;
-  if WallFromUp then Down;Paint;
-  if WallFromLeft then Right;Paint;
-  if WallFromRight then Left;Paint;
+ if WallFromDown then begin Up;Paint; end;
+  if WallFromUp then begin Down;Paint; end;
+  if WallFromLeft then begin Right;Paint; end;
+  if WallFromRight then begin Left;Paint; end;
 end.
 // тупой вариант:
 uses Robot;
