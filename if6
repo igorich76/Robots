@@ -1,0 +1,15 @@
+##
+uses Robot;
+Task('If6');
+
+Right;
+if CellIsPainted then begin Left;Left; Paint; end else Left;
+
+Left;
+if CellIsPainted then begin Right;Right; Paint; end else Right;
+
+Up;
+if CellIsPainted then begin down;Down; Paint; end else Down;
+
+Down;
+if CellIsPainted then begin Up;Up; Paint; end else Up;
