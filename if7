@@ -1,0 +1,19 @@
+##
+uses robot;
+Task('if7');
+if WallFromDown and WallFromLeft then
+  begin
+    Up;Right;Paint;
+  end;
+if WallFromLeft and WallFromUp then
+  begin
+    Down;Right;Paint;
+  end;
+if WallFromUp and WallFromRight then
+  begin
+    Down;Left;Paint;
+  end;
+if WallFromRight and WallFromDown then
+  begin
+    Up;Left;Paint;
+  end;
