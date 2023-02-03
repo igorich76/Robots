@@ -1,0 +1,20 @@
+##
+uses robot;
+Task('if8');
+if WallFromUp then
+  begin
+    Down;Paint;Down;Paint;
+      if FreeFromDown then
+    begin
+      Down;Paint;
+    end;
+  end;
+ 
+if WallFromLeft then
+  begin
+    Right;Paint;Right;Paint;
+      if FreeFromRight then
+        begin
+          Right;Paint;
+        end;
+  end;
