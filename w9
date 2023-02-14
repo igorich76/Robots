@@ -1,0 +1,13 @@
+uses robot;
+Task('w9');
+repeat
+  Paint;Up;
+until not WallFromRight;
+Paint;Right;Paint;
+Down;
+while WallFromLeft do
+  begin
+   Paint;Down;
+   if WallFromLeft and WallFromDown
+     then Paint; break
+  end;
