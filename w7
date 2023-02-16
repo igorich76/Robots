@@ -1,0 +1,22 @@
+// сам сделал за 5 минут
+##
+uses robot;
+Task('w7');
+while CellIsFree do Right;
+Up;
+while CellIsFree do Up;
+Right;
+while CellIsFree do Right;
+//
+##
+uses robot;
+Task('w7');
+repeat
+  Right;
+until CellIsPainted;
+repeat
+  Up;
+until CellIsPainted;
+repeat
+  Right;
+until CellIsPainted;
