@@ -1,0 +1,12 @@
+##
+uses robot;
+Task('count4');
+
+var count := 0;
+while WallFromDown do
+begin
+  Right;
+  count += 1;
+end;
+Down;
+for var i := 1 to count do Left; 
