@@ -1,0 +1,14 @@
+##
+uses robot;
+Task('count3');
+
+var count := 0;
+while CellIsFree do
+begin
+  Up;
+  count += 1;
+end;
+if CellIsPainted then 
+begin
+  for var i := 1 to count do Right;
+end; 
