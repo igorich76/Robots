@@ -1,0 +1,12 @@
+##
+uses robot;
+Task('cc1');
+
+for var i1 := 0 to 5 do
+begin
+  for var i2 := 0 to 4 do
+  begin
+    Paint; Right;  
+  end;
+Down; 
+end;
