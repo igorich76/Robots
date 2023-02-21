@@ -1,0 +1,14 @@
+##
+uses robot;
+Task('cc3');
+
+var cnt := 5;
+for var i := 5 downto 0 do
+begin
+  for var j := cnt downto 0 do
+  begin    
+    Paint; Right;   
+  end;
+  cnt -= 1;
+  Down; 
+end;
