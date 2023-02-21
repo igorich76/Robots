@@ -1,0 +1,18 @@
+uses robot;
+
+procedure Square2;
+begin
+  Paint; Down; Paint;
+  Right; Paint; Up;
+  Paint; Left;
+end;
+
+begin
+  Task('p2');
+  loop 5 do
+  begin
+    Square2;
+    loop 3 do Right;
+  end; 
+  Square2;
+end.
