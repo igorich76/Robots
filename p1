@@ -1,0 +1,27 @@
+uses robot;
+
+procedure Cross;
+begin
+  Down;
+  loop 2 do
+  begin
+    Paint; Up;Paint;
+  end;
+  Left;Down;
+  loop 2 do
+  begin
+    Paint;Right;Paint;
+  end;
+end;
+
+begin
+  Task('p1');
+  Cross;
+  loop 4 do Right;
+  Up;
+  Cross;
+  loop 3 do Up;
+  loop 4 do Left;
+  Cross;
+  Left;
+end.
