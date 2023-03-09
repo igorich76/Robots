@@ -1,0 +1,9 @@
+##
+uses robot;
+Task('cif6');
+while FreeFromRight do
+  begin
+    Right;
+    if (wallfromup and freefromdown) or (freefromup and freefromdown) or
+(wallfromdown and freefromup) then paint;
+  end;
