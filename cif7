@@ -1,0 +1,19 @@
+##
+uses robot;
+Task('cif7');
+while FreeFromRight do
+  begin
+    Right;
+    if (FreeFromUp and FreeFromDown) then
+      begin
+        Up;Paint;Down;Down;Paint;Up;
+      end;
+    if (WallFromUp and FreeFromDown) then
+      begin
+        Down; Paint; Up;
+      end;
+    if (WallFromDown and FreeFromUp) then 
+      begin
+        Up;Paint;Down;
+      end;
+  end;
