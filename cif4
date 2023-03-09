@@ -1,0 +1,8 @@
+##
+uses robot;
+Task('cif4');
+while FreeFromRight do
+  begin
+    Right;
+    if FreeFromDown and WallFromUp then Paint;
+  end;
