@@ -1,0 +1,15 @@
+##
+uses robot;
+Task('cif8');
+while FreeFromRight do
+  begin
+    Right;
+    if (WallFromDown) then
+      begin
+        Up;Paint;Down;
+      end;
+    if (WallFromUp) then 
+      begin
+        Down;Paint;Up; 
+      end;
+  end;
