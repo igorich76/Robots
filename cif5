@@ -1,0 +1,10 @@
+##
+uses robot;
+Task('cif5');
+while FreeFromRight do
+  begin
+    Right;
+    if FreeFromDown and FreeFromUp then Paint;
+    if WallFromUp and WallFromDown then Paint;
+    if WallFromDown then Paint;
+  end;
