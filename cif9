@@ -1,0 +1,22 @@
+##
+Task('cif9');
+while FreeFromRight do
+begin
+  Right;
+  if WallFromDown and FreeFromUp then
+  begin
+    Up;
+    Paint;
+    Down;
+  end;
+  if WallFromUp and FreeFromDown then
+  begin
+    Down;
+    Paint;
+    Up;
+  end;
+  if WallFromUp and WallFromDown then
+  begin
+    Paint;
+  end;
+end;
