@@ -1,0 +1,11 @@
+Task('cif10');
+while FreeFromRight do
+begin
+  Right;
+  if CellIsPainted and FreeFromDown then
+  begin
+    Down;
+    Paint;
+    Up;
+  end;
+  end;
