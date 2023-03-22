@@ -23,4 +23,26 @@ begin
   end;
   Paint;
 end.
+/////////////// для Шкаруба Ю. сделал, немного по-другому. Сразу не мог найти у неё ошбку. ////////
+##
+uses robot;
+Task('if3');
+if FreeFromLeft and FreeFromDown then
+begin
+Down;Left;Paint;
+end
+else // соединить два if
+if FreeFromUp and FreeFromRight then
+begin
+Right;Up;Paint;
+end;
 
+if FreeFromRight and FreeFromDown then
+begin
+Down; Right; Paint;
+end
+else //соединить два if
+if FreeFromUp and FreeFromleft then
+begin
+Up; Left; Paint; // и здесь нужно left, а не right
+end;
