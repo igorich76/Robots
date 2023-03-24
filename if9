@@ -1,0 +1,19 @@
+##
+uses robot;
+Task('if9');
+// пойти влево-вправо и определить стены, а потом определить действия
+Left;
+if WallFromUp then 
+begin
+  Right; Right;
+  if WallFromDown then
+  begin
+    Left; Up; Paint; Down; Down; Paint; Up
+  end else 
+  begin
+    Left; Paint;
+  end
+end else 
+  begin
+    Right; Paint;
+  end; 
