@@ -1,5 +1,5 @@
+##
 uses robot;
-
 procedure Cross;
 begin
   Down;
@@ -25,3 +25,45 @@ begin
   Cross;
   Left;
 end.
+////////////////////// обычным способом без процедуры ///////////////
+##
+uses robot;
+Task('p1');
+Up; Paint; Down;
+Right; Paint; Left;
+Left; Paint; Right;
+Down; Paint; Up;
+Paint;
+loop 5 do Right;
+Up;
+Up; Paint; Down;
+Right; Paint; Left;
+Left; Paint; Right;
+Down; Paint; Up;
+Paint;
+loop 3 do Up;
+loop 3 do Left;
+Up; Paint; Down;
+Right; Paint; Left;
+Left; Paint; Right;
+Down; Paint; Up;
+Paint;
+//////////////////// процедура ////////////////////
+##
+uses robot;
+procedure Cross;
+begin
+Up; Paint; Down;
+Right; Paint; Left;
+Left; Paint; Right;
+Down; Paint; Up;
+Paint;
+end;
+Task('p1');
+Cross;
+loop 5 do Right;
+Up;
+Cross;
+loop 3 do Up;
+loop 3 do Left;
+Cross;
