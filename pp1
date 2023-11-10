@@ -1,0 +1,32 @@
+##
+uses Robot; // задание pp1
+procedure RightN(n: integer);
+begin
+  loop n do Right;
+  Paint;
+end;
+procedure LeftN(n: integer);
+begin
+  loop n do Left;
+end;
+Task('pp1');
+RightN(6);
+LeftN(6);
+Down;
+RightN(8);
+LeftN(8);
+Down;
+RightN(4);
+LeftN(4);
+Down;
+RightN(3);
+LeftN(3);
+Down;
+RightN(10);
+LeftN(10);
+Down;
+RightN(1);
+LeftN(1);
+Down;
+RightN(6);
+LeftN(6);
