@@ -1,0 +1,20 @@
+##
+uses Robot; задание pp2
+procedure PaintDown(n: integer);
+begin
+  for var i:=0 to n-1 do 
+    begin
+      Paint; Down;
+    end;
+loop n do Up;    
+end;
+Task('pp2');
+PaintDown(7);
+Right; Right;
+PaintDown(4);
+Right; Right;
+PaintDown(9);
+Right; Right;
+PaintDown(6);
+Right; Right;
+PaintDown(8);
