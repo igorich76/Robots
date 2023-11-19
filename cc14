@@ -1,0 +1,20 @@
+##
+uses Robot;
+Task('cc14');
+var n := 13;
+loop n do Right;
+Down;
+loop n - 1 do Left;
+Down;
+loop n - 2 do Right;
+Down;
+loop n - 3 do Left;
+Down;
+loop n - 4 do Right;
+Down;
+loop n - 5 do Left;
+Down;
+loop n - 6 do Right;
+Down;
+loop n - 7 do Left;
+Down;
