@@ -1,20 +1,50 @@
-uses Robot;
-begin
-  Task('c7');
+##
+uses robot;
+Task('c7');// способ №1 два цикла
+
+while WallFromRight do
+    begin
+      Paint;Down;Paint;Left;Paint;Up;Paint;
+      Left;Paint;Down;Paint;Left;Paint;Up;Paint;Left;Paint;
+      Paint;Down;Paint;Left;Paint;Up;Paint;
+      Left;Paint;Down;Paint;Left;Paint;Up;Paint;Left;Paint;
+    end;
+    
+while WallFromLeft do
+    begin
+      Down;Paint;Left;Paint;Up;Paint;
+    end;
   
-   while WallFromLeft do  begin    Paint;   Down;Paint;   end;
-   while FreeFromLeft do   begin     Left;Paint;   end;
-   while FreeFromUp do     begin     Up;Paint;   Left;Paint;   end;
-   while WallFromLeft do  begin   Paint;   Down;Paint;   end;
-   while FreeFromLeft do   begin     Left;Paint;   end;
-   while FreeFromUp do     begin     Up;Paint;   Left;Paint;   end;
-   while WallFromLeft do  begin   Paint;   Down;Paint;   end;
-   while FreeFromLeft do   begin     Left;Paint;   end;
-   while FreeFromUp do     begin     Up;Paint;   Left;Paint;   end;
-   while WallFromLeft do  begin   Paint;   Down;Paint;   end;
-   while FreeFromLeft do   begin     Left;Paint;   end;
-   while FreeFromUp do     begin     Up;Paint;   Left;Paint;   end;
-   while WallFromLeft do  begin   Paint;   Down;Paint;   end;
-   while FreeFromLeft do   begin     Left;Paint;   end;
-   while FreeFromUp do     begin     Up;Paint;   Left;   end;
-end.
+Left;
+
+/////////////////////////////////////////////
+
+##
+uses robot;
+Task('c7'); // способ №2 пять циклов
+
+while WallFromLeft do
+  begin
+    Paint;Down;Paint;Left;Paint;Up;Paint;
+  end;
+Left;
+while WallFromLeft do
+  begin
+    Paint;Down;Paint;Left;Paint;Up;Paint;
+  end;
+Left;
+while WallFromLeft do
+  begin
+    Paint;Down;Paint;Left;Paint;Up;Paint;
+  end;
+Left;
+while WallFromLeft do
+  begin
+    Paint;Down;Paint;Left;Paint;Up;Paint;
+  end;
+Left;
+while WallFromLeft do
+  begin
+    Paint;Down;Paint;Left;Paint;Up;Paint;
+  end;
+Left;
