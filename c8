@@ -7,3 +7,14 @@ while FreeFromLeft do
     Left;Up;Paint;Down;
   end;
 Up
+
+///////////////////////////
+
+##
+uses robot;
+Task('c8'); //
+Paint;Down;
+repeat
+  Left;Up;Paint;Down;
+until WallFromLeft;
+Up
