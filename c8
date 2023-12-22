@@ -1,0 +1,9 @@
+##
+uses robot;
+Task('c8'); //
+Paint;Down;
+while FreeFromLeft do
+  begin
+    Left;Up;Paint;Down;
+  end;
+Up
