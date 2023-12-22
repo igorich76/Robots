@@ -48,3 +48,21 @@ while WallFromLeft do
     Paint;Down;Paint;Left;Paint;Up;Paint;
   end;
 Left;
+
+//////////////////////////////
+
+##
+uses robot;
+Task('c7'); //
+repeat
+  Paint;Down;Paint;Left;Paint;Up;Paint;
+      Left;Paint;Down;Paint;Left;Paint;
+      Up;Paint;Left;Paint;Paint;Down;
+      Paint;Left;Paint;Up;Paint;Left;Paint;
+      Down;Paint;Left;Paint;Up;Paint;Left;
+      Paint;
+until FreeFromRight;
+repeat
+    Down;Paint;Left;Paint;Up;Paint;
+until FreeFromLeft;
+Left;
