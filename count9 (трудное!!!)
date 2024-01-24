@@ -1,0 +1,13 @@
+## // искали с Тимофеем закономерность. Он нашёл.
+uses robot;
+task('count9');
+var (a, b) := (0, 0);
+while freefromright do
+begin
+  if cellispainted and (a<3) then a += 1;
+  if cellisfree and (a<3) then a := 0; 
+  if (a=3) then b += 1;
+  print(a);
+  right;
+end;
+loop b do left;
