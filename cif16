@@ -1,0 +1,33 @@
+uses robot; 
+begin 
+Task('cif16'); 
+if WallFromUp and WallFromLeft then 
+begin 
+while FreeFromDown do down; 
+while FreeFromRight do right; 
+end 
+else 
+begin 
+if WallFromRight and WallFromDown then 
+begin 
+while FreeFromleft do left; 
+while FreeFromUp do up; 
+end 
+else 
+begin 
+if  WallFromRight and WallFromUp then 
+begin 
+while FreeFromDown do down; 
+while FreeFromLeft do left; 
+end 
+else 
+begin 
+if WallFromDown and WallFromLeft then 
+begin 
+while FreeFromUp do up; 
+while FreeFromRight do right; 
+end; 
+end; 
+end; 
+end;    
+end. 
